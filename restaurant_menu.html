@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lo's Cozy Cafe</title>
+    <style>
+      #header-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 10px;
+      }
+
+      #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #order-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .menu-color {
+        background-color: rgb(67, 194, 220);
+        margin: 50px;
+      }
+
+      .order-form-color {
+        background-color: rgb(78, 190, 72);
+        margin: 50px;
+      }
+
+
+    </style> 
+  </head>
+  <body>
+    <header id="header">
+      <img src="https://cdn.discordapp.com/attachments/1262855631900119223/1428623333007556669/LCC.png?ex=68f32ca9&is=68f1db29&hm=fcc8ccf27f16ebd66d89fbbcb95e6898c3dfa860f1cb4f947a4fd95062fc7414&" id="header-img">
+      <h1>Lo's Cozy Cafe</h1>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order-form">Order Form</a>
+      </nav>
+    </header>
+    <main>
+      <section id="menu" class="menu-color">
+        <h2>Menu</h2>
+        <article>
+          <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/34/Leafless_Bamboo_JE1_BE2.png/revision/latest?cb=20200525024950" width="50">
+          <h3>1. Bamboo Dish</h3>
+          <p>The Bamboo dish is a classic dish from China. It has a unique flavor and texture that is perfect for any occasion. It costs <i>$15</i>.</p>
+        </article>
+        <article>
+          <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5c/Health_Potion_%28MCD_2%29.png/revision/latest?cb=20210322191824" width="50">
+          <h3>2. Boba Tea</h3>
+          <p>Boba Tea is the perfect drink. Great for relaxing after a long day. It costs <i>$5</i>.</p>
+        </article>
+        <article>
+          <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/da/Suspicious_Stew_JE1_BE1.png/revision/latest?cb=20190512110804" width="50">
+          <h3>3. Steamed Dumplings</h3>
+          <p>Steamed Dumplings have the classsic smell of a old family recipe. Remind you of when your grandma used to make them. It costs <i>$10</i>.</p>
+        </article>
+      </section>
+      <section id="order-form" class="order-form-color">
+        <h2>Place Your Order</h2>
+        <form>
+          <br><br>
+          <label for="Menu Item">Menu Item Number: </label><input type="number" min="0" max="3">
+          <br><br>
+          What sides do you want?<br>
+          <input type="radio" name="option"><label for="Sides">Potato Fries</label><br>
+          <input type="radio" name="option"><label for="Sides">Dried Bananas</label><br>
+          <input type="radio" name="option"><label for="Sides">Yogurt</label><br>
+          <br><br>
+          <textarea placeholder="Special Requests"></textarea>
+          <br><br>
+          <label for="submit"></label><input type="submit" value="Go to Checkout">
+          <br><br>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Created by
+        <a href="https://github.com/NotSkyness">NotSkyness</a>
+      </p>
+    </footer>
+  </body>
+</html>
